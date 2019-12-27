@@ -17,6 +17,7 @@ module RIO.Vector.Boxed.Partial
   -- ** Extracting subvectors
   , Data.Vector.init
   , Data.Vector.tail
+  , RIO.Vector.Partial.slice  -- Pending <https://gitlab.haskell.org/ghc/ghc/issues/17233>
 
   -- * Modifying vectors
   -- ** Bulk updates
@@ -62,3 +63,4 @@ module RIO.Vector.Boxed.Partial
   ) where
 
 import qualified Data.Vector
+import qualified RIO.Vector.Partial
